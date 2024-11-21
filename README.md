@@ -30,8 +30,9 @@ flutter_getx_mvc_guide/
 │
 ├── lib/
 │   ├── core/           # Core application components
-│   ├── config/          # Configuration and dependency injection
-│   └── feature/        # Feature-specific modules
+│   ├── config/         # Configuration and dependency injection
+│   ├── feature/        # Feature-specific modules
+│   └── main.dart       
 │
 └── assets/             # Static resources
 ```
