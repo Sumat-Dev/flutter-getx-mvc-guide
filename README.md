@@ -7,7 +7,7 @@
 - [Key Components](#key-components)
 - [Getting Started](#getting-started)
 
-## 🚀 Introduction
+## 🚀 Overview
 
 This project implements a robust Model-View-Controller (MVC) architectural pattern using GetX for state management in Flutter. Our goal is to create a scalable, maintainable, and efficient mobile application architecture.
 
@@ -95,7 +95,7 @@ class UserProfileScreen extends GetView<ProfileController> {
 }
 ```
 
-## 🚀 Getting Started
+## 🛠️ Getting Started
 
 ### Installation
 
@@ -119,9 +119,16 @@ flutter run
 - `http: ^1.2.2` (HTTP Requests)
 - `shared_preferences: ^2.3.3`
 
-## 📄 License
-This project is licensed under the MIT License.
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/flutter-getx-mvc-guide/issues).
+
+## 📝 License
+This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
+
+## 👨‍💻 Author
+**Sumat Dev**
+- GitHub: [@Sumat-Dev](https://github.com/Sumat-Dev)
 
 ---
 
-**Happy Coding! 🚀👨‍💻👩‍💻**
+**Happy Coding! 💻✨**
