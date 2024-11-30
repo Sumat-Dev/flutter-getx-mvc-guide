@@ -1,11 +1,12 @@
 # Flutter GetX MVC Architecture Guide
 
 ## 📖 Table of Contents
-- [Introduction](#introduction)
+- [Overview](#overview)
 - [Architectural Pattern](#architectural-pattern)
 - [Project Structure](#project-structure)
 - [Key Components](#key-components)
 - [Getting Started](#getting-started)
+- [Packages](#packages)
 
 ## 🚀 Overview
 
@@ -24,17 +25,28 @@ The Model-View-Controller (MVC) pattern divides the application into three core 
 | **Controller** | Intermediary & Logic | - Handles user input<br>- Coordinates between Model and View<br>- Manages application state |
 
 ## 📂 Project Structure
-
 ```
-flutter_getx_mvc_guide/
+lib/
 │
-├── lib/
-│   ├── core/           # Core application components
-│   ├── config/         # Configuration and dependency injection
-│   ├── feature/        # Feature-specific modules
-│   └── main.dart       
+├── core/
+│   ├── routes/
+│   └── themes/
 │
-└── assets/             # Static resources
+├── core/
+│   ├── common/
+│   ├── constants/
+│   ├── error/
+│   ├── services/
+│   └── utils/
+│
+├── features/
+│   └── home/
+│       ├── bindings/
+│       ├── models/
+│       ├── controllers/
+│       └── views/
+│
+└── main.dart
 ```
 
 ## 🧩 Key Components
@@ -117,10 +129,6 @@ flutter run
 ## 📦 Packages
 - `get: ^4.6.6` (State Management)
 - `http: ^1.2.2` (HTTP Requests)
-- `shared_preferences: ^2.3.3`
-
-## 🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/Sumat-Dev/flutter-getx-mvc-guide/issues).
 
 ## 📝 License
 This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
