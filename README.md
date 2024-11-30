@@ -119,9 +119,6 @@ flutter run
 - `http: ^1.2.2` (HTTP Requests)
 - `shared_preferences: ^2.3.3`
 
-## 🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/flutter-getx-mvc-guide/issues).
-
 ## 📝 License
 This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
 
