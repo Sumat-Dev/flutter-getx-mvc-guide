@@ -1,16 +1,16 @@
 # Flutter GetX MVC Architecture Guide
 
 ## 📖 Table of Contents
-- [Overview](#overview)
+- [Introduction](#introduction)
 - [Architectural Pattern](#architectural-pattern)
 - [Project Structure](#project-structure)
 - [Key Components](#key-components)
 - [Getting Started](#getting-started)
 - [Packages](#packages)
 
-## 🚀 Overview
+## 🚀 Introduction
 
-This project implements a robust Model-View-Controller (MVC) architectural pattern using GetX for state management in Flutter. Our goal is to create a scalable, maintainable, and efficient mobile application architecture.
+This project implements a robust Model-View-Controller (MVC) architectural pattern using GetX for state management in Flutter. Our goal is to create a scalable, maintainable, and efficient mobile application architecture
 
 ## 🏗 Architectural Pattern
 
