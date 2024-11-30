@@ -28,7 +28,7 @@ The Model-View-Controller (MVC) pattern divides the application into three core 
 ```
 lib/
 │
-├── core/
+├── config/
 │   ├── routes/
 │   └── themes/
 │
