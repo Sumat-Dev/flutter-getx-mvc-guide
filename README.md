@@ -40,10 +40,10 @@ lib/
 │   └── utils/
 │
 ├── features/
-│   └── home/
+│   └── profile/
 │       ├── bindings/
-│       ├── models/
 │       ├── controllers/
+│       ├── models/
 │       └── views/
 │
 └── main.dart
@@ -53,36 +53,35 @@ lib/
 
 ### 1. Model
 ```dart
-class UserModel {
+class ProductModel {
   final String id;
   final String name;
-  final String email;
-  final String avatarUrl;
+  final String description;
+  final double price;
+  final String imageUrl;
+  final int stock;
 
-  UserModel({
+  ProductModel({
     required this.id,
     required this.name,
-    required this.email,
-    required this.avatarUrl
+    required this.description,
+    required this.price,
+    required this.imageUrl,
+    required this.stock,
   });
 }
 ```
 
 ### 2. Controller
 ```dart
-class ProfileController extends GetxController {
+class ProductController extends GetxController {
   final ApiServices _apiServices = ApiServices();
 
-  final Rx<UserModel?> _user = Rx<UserModel?>(null);
-  UserModel? get user => _user.value;
+  final RxList<ProductModel> _productList = <ProductModel>[].obs;
+  List<ProductModel> get productList => _productList;
 
-  Future<void> fetchUserData() async {
-    try {
-      final user = await _apiServices.get(ApiPath.profile);
-      _user.value = user as UserModel;
-    } catch (e) {
-      ErrorHandler.handleUnknownError(Get.context!, e);
-    }
+  Future<void> getProducts() async {
+    //...
   }
 }
 
@@ -90,17 +89,24 @@ class ProfileController extends GetxController {
 
 ### 3. View
 ```dart
-class UserProfileScreen extends GetView<ProfileController> {
-  const UserProfileScreen({super.key});
+class ProductScreen extends StatelessWidget {
+  const ProductScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final ProductController productController = Get.find();
+
     return Scaffold(
       body: Obx(() {
-        final user = controller.user;
-        return user != null
-            ? UserProfileWidget(user: user)
-            : const LoadingIndicator();
+        if (productController.productList.isEmpty) {
+          return const LoadingIndicator();
+        }
+
+        if (productController.productList.isNotEmpty) {
+          return _buildProductWidget();
+        }
+
+        return const SizedBox.shrink(); // Add this line
       }),
     );
   }
@@ -128,10 +134,6 @@ flutter run
 
 ## 📦 Packages
 - `get: ^4.6.6` (State Management)
-- `http: ^1.2.2` (HTTP Requests)
-
-## 📝 License
-This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
 
 ## 👨‍💻 Author
 **Sumat Dev**

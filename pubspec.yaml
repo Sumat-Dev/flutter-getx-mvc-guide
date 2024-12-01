@@ -32,6 +32,7 @@ flutter:
   - assets/images/vector/
   - assets/icons/vector/
   - assets/icons/vector/
+  - assets/products.json
 
   
   

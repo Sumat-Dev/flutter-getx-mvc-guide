@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "name": "Smartphone",
+    "description": "A high-quality smartphone with excellent camera features.",
+    "price": 299.99,
+    "imageUrl": "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "stock": 50
+  },
+  {
+    "id": "2",
+    "name": "Laptop",
+    "description": "A lightweight laptop suitable for work and travel.",
+    "price": 799.99,
+    "imageUrl": "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800",
+    "stock": 30
+  },
+  {
+    "id": "3",
+    "name": "Wireless Headphones",
+    "description": "Noise-cancelling wireless headphones with long battery life.",
+    "price": 199.99,
+    "imageUrl": "https://images.pexels.com/photos/577769/pexels-photo-577769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "stock": 100
+  },
+  {
+    "id": "4",
+    "name": "Smartwatch",
+    "description": "A smartwatch with fitness tracking and notifications.",
+    "price": 149.99,
+    "imageUrl": "https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "stock": 75
+  },
+  {
+    "id": "5",
+    "name": "Gaming Mouse",
+    "description": "An ergonomic gaming mouse with customizable buttons.",
+    "price": 49.99,
+    "imageUrl": "https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "stock": 120
+  },
+  {
+    "id": "6",
+    "name": "Bluetooth Speaker",
+    "description": "A portable Bluetooth speaker with high-quality sound.",
+    "price": 89.99,
+    "imageUrl": "https://images.pexels.com/photos/1279365/pexels-photo-1279365.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "stock": 60
+  },
+  {
+    "id": "7",
+    "name": "External Hard Drive",
+    "description": "A 1TB external hard drive for reliable storage.",
+    "price": 69.99,
+    "imageUrl": "https://images.pexels.com/photos/2942361/pexels-photo-2942361.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "stock": 40
+  },
+  {
+    "id": "8",
+    "name": "Keyboard",
+    "description": "A mechanical keyboard with RGB lighting.",
+    "price": 99.99,
+    "imageUrl": "https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "stock": 90
+  },
+  {
+    "id": "9",
+    "name": "Monitor",
+    "description": "A 24-inch full HD monitor with vibrant colors.",
+    "price": 149.99,
+    "imageUrl": "https://images.pexels.com/photos/331788/pexels-photo-331788.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "stock": 35
+  },
+  {
+    "id": "10",
+    "name": "Action Camera",
+    "description": "A waterproof action camera for outdoor adventures.",
+    "price": 249.99,
+    "imageUrl": "https://images.pexels.com/photos/690806/pexels-photo-690806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "stock": 20
+  }
+]

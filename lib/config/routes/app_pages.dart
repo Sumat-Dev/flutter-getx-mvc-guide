@@ -1,25 +1,19 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_getx_mvc_guide/config/bindings/profile_binding.dart';
+import 'package:flutter_getx_mvc_guide/feature/product/bindings/product_binding.dart';
+import 'package:flutter_getx_mvc_guide/feature/product/views/product_screen.dart';
 import 'package:get/get.dart';
+
 
 part 'app_routes.dart';
 
 class AppPages {
-  static const initial = Routes.LOGIN;
+  static const initial = Routes.PRODUCT;
 
   static final routes = [
     GetPage(
-      name: _Paths.LOGIN,
-      page: () => const Scaffold(),
+      name: _Paths.PRODUCT,
+      page: () => const ProductScreen(),
+      binding: ProductBinding(),
     ),
-    GetPage(
-      name: _Paths.HOME,
-      page: () => const Scaffold(),
-    ),
-    GetPage(
-      name: _Paths.PROFILE,
-      page: () => const Scaffold(),
-      binding: ProfileBinding(),
-    ),
+    // ...
   ];
 }

@@ -1,0 +1,1 @@
+ /Users/itthiployseekum/Documents/GitHub/flutter-getx-mvc-guide/.dart_tool/flutter_build/1c2a4468f36cc161ba083ec378b7e910/native_assets.yaml: 
