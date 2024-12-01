@@ -21,7 +21,7 @@ class ProductScreen extends StatelessWidget {
           return _buildProductWidget();
         }
 
-        return const SizedBox.shrink(); // Add this line
+        return const SizedBox.shrink();
       }),
     );
   }
